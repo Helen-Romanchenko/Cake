@@ -1,0 +1,31 @@
+.logo__logotype {
+  margin: 0;
+  padding: 0;
+  @include set-font(16px, 700, 32px, $color-black);
+  font-family: $font-title;
+
+}
+
+.logo__logotype--footer {
+  @include set-font(28px, 700, 44px, $color-white);
+}
+
+@media (min-width: $width-middle) {
+  .logo__logotype {
+    font-size: 20px;
+  }
+  .logo__logotype--footer {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $width-large) {
+  .logo__logotype {
+    font-size: 24px;
+    color: $color-text--main;
+  }
+  .logo__logotype--footer {
+    font-size: 28px;
+    color: $color-text--main;
+  }
+}

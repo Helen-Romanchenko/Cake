@@ -1,0 +1,256 @@
+.assortment {
+  min-height: 875px;
+}
+
+.assortment__title {
+  margin: 0 auto;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.assortment__list {
+  @include list-reset;
+  margin-top: 20px;
+}
+
+.assortment__row {
+  margin-bottom: 8px;
+}
+
+.assortment__item {
+  display: block;
+  width: auto;
+  max-width: 400px;
+  height: 123px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  background-color: $color-white;
+  overflow: hidden;
+}
+
+.assortment__list .assortment__item--big:last-child {
+  background-color: #f3f3f5;
+}
+
+.assortment__link {
+  position: relative;
+  display: block;
+  width: auto;
+  height: 100%;
+  padding-left: 15px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  background-color: transparent;
+
+  &:hover .assortment__class {
+    color: $color-brightpink;
+  }
+
+  &:hover .assortment__variety {
+    color: rgba($color-brightpink, 70%);
+  }
+
+  &:hover .assortment__image {
+  opacity: 0.4;
+  }
+}
+
+.assortment__class {
+  position: relative;
+  z-index: 30;
+  margin: 0;
+  padding: 0;
+  font-family: $font-main;
+  @include set-font(14px, 400, 24px, $color-text--main);
+}
+
+.assortment__variety {
+  position: relative;
+  z-index: 30;
+  margin: 0;
+  padding: 0;
+  font-family: $font-main;
+  @include set-font(12px, 400, 12px, rgba($color-text--main, 70%));
+}
+
+.assortment__anchor {
+  display: none;
+}
+
+.assortment__image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 25;
+  width: 280px;
+  height: auto;
+}
+
+@media (min-width: $width-middle) {
+  .assortment {
+    min-height: 920px;
+  }
+
+  .assortment__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+
+  .assortment__row {
+    display: flex;
+    justify-content: space-between;
+    width: 728px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 18px;
+  }
+
+  .assortment__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+  .assortment__item {
+   margin: 0;
+   width: 290px;
+   max-width: 290px;
+   height: 188px;
+
+    &--big {
+      width: 407px;       //420
+      max-width: 420px;
+      height: 390px;
+    }
+  }
+
+  .assortment__link {
+    padding-left: 30px;
+    padding-top: 25px;
+
+    &:hover {
+      box-shadow: 0 10px 13px 1px rgba(163, 6, 60, 0.12);
+    }
+  }
+
+  .assortment__image {
+    width: 290px;
+
+    &--big {
+      width: 407px;
+    }
+  }
+
+}
+
+@media (min-width: $width-large) {
+  .assortment {
+    min-height: 1530px;
+    margin-top: -70px;
+
+  }
+
+  .assortment__title {
+    margin-left: 0;
+    text-align: left;
+}
+
+  .assortment__list {
+    margin-top: 50px;
+  }
+
+  .assortment__row {
+    width: 1220px;
+    margin-bottom: 40px;
+  }
+
+  .assortment__item {
+   width: 486px;
+   max-width: 486px;
+   height: 307px;
+
+    &--big {
+      width: 699px;
+      max-width: 699px;
+      height: 655px;
+    }
+  }
+
+    .assortment__image {
+    width: 486px;
+
+      &--big {
+        width: 699px;
+      }
+    }
+
+  .assortment__link {
+    padding-left: 50px;
+    padding-top: 35px;
+  }
+
+  .assortment__class {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .assortment__variety {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .assortment__anchor {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    z-index: 30;
+    display: block;
+    width: 90px;
+    height: 30px;
+    padding: 30px;
+    padding-right: 70px;
+    font-family: $font-main;
+    @include set-font(0px, 400, 30px, $color-text--main);
+    transition: all 0.3s ease-in-out;
+
+    &:before {
+      @include pseudo-absolute(17px, 12px);
+      bottom: 34px;
+      right: 20px;
+      background-image: url("../img/sprite.png");
+      background-size: 94px auto;
+      background-position: -5px -5px;
+      background-repeat: no-repeat;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .assortment__link:hover .assortment__anchor {
+    font-size: 20px;
+    color: rgba($color-text--main, 70%);
+
+    &:before {
+      right: 0;
+    }
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .assortment__anchor:before {
+      background-image: url("../img/sprite@2x.png");
+      background-size: 94px auto;
+    }
+  }
+
+   .assortment__image {
+    width: 486px;
+
+    &--big {
+      width: 696px;
+    }
+  }
+
+}
+

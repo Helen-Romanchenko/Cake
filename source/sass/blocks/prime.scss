@@ -1,0 +1,163 @@
+.prime {
+  min-height: 460px;
+}
+
+.prime__background {
+  width: auto;
+  background-image: url("../img/cake-main-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 381px auto;
+  background-position: center top;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/cake-main-mobile@2x.png");
+    background-size: 381px auto;
+  }
+}
+
+.prime__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.prime__heading {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 133px;
+  padding: 0;
+  font-family: $font-title;
+  @include set-font(40px, 400, 40px, $color-h1);
+  text-align: center;
+}
+
+.prime__privilege {
+  margin: 0 auto;
+  margin-top: 3px;
+}
+
+.prime__feature {
+  @include list-reset;
+  margin-top: -2px;
+
+  @media (min-width: 320px + 20px*2) and (max-width: 767px) {
+    margin-left: 6.25%;
+  }
+}
+
+.prime__choose {
+  max-width: 250px;
+  margin-top: 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+@media (min-width: $width-middle) {
+
+  .prime {
+    min-height: 705px;
+  }
+
+  .prime__background {
+    background-image: url("../img/cake-main-tablet.png"),
+                      url("../img/bg-fruits-tablet.png");
+    background-position: right -146px top 13px, right 372px top 30px;
+    background-size: 570px auto, 124px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/cake-main-tablet@2x.png"),
+                        url("../img/bg-fruits-tablet@2x.png");
+      background-size: 570px auto, 124px auto;
+    }
+
+  }
+
+  .prime__heading {
+    width: 300px;
+    margin-left: 3.52%;
+    margin-top: 110px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .prime__privilege {
+    margin-left: 3.52%;
+    margin-top: 17px;
+  }
+
+  .prime__feature {
+    order: 3;
+    margin-top: 145px;
+    margin-left: 3.52%;
+    width: 90%;
+  }
+
+  .prime__choose {
+    order: 2;
+    margin-left: 3.52%;
+    margin-top: 35px;
+  }
+
+}
+
+
+
+@media (min-width: $width-large) {
+  .prime {
+    min-height: 940px;
+  }
+
+  .prime__background {
+    max-width: 1638px;
+    min-height: 940px;
+
+    margin: 0 auto;
+    background-image: url("../img/cake-main-desktop.png"),
+                      url("../img/bg-fruits-desktop.png");
+    background-position: right -180px top 0, right 694px top 21px;
+    background-size: 940px auto, 314px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/cake-main-desktop@2x.png"),
+                        url("../img/bg-fruits-desktop@2x.png");
+      background-size: 940px auto, 314px auto;
+    }
+  }
+
+  .prime__heading {
+    width: 370px;
+    margin-left: 0;
+    margin-top: 135px;
+    font-size: 78px;
+    line-height: 78px;
+  }
+
+  .prime__privilege {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+
+  .prime__feature {
+    width: 670px;
+
+   margin-top: 130px;
+    margin-left: 0;
+   margin-right: auto;
+  }
+
+  .prime__choose {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+
+}
+
+
+
+@media (min-width: 1638px) {
+  .prime__background {
+    background-position: right 0 top 0, right 830px top 21px;
+
+  }
+}

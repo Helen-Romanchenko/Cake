@@ -1,0 +1,87 @@
+.feature-list {
+
+}
+
+.feature-list__item {
+  position: relative;
+  min-height: 33px;
+  margin-bottom: 11px;
+  padding-left: 42px;
+
+  font-family: $font-main;
+  @include set-font(14px, 400, 18px, $color-black);
+
+  &:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include pseudo-absolute(33px, 33px);
+    background-size: 33px 33px;
+    background-repeat: no-repeat;
+
+    background-image: url("../img/sprite.png");
+    background-size: 94px auto;
+    background-repeat: no-repeat;
+  }
+
+  &--ingredients:before {
+    background-position: -5px -69px;
+  }
+
+  &--delivery:before {
+    background-position: -5px -27px;
+  }
+
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .feature-list__item:before {
+    background-image: url("../img/sprite@2x.png");
+    background-size: 94px auto;
+  }
+}
+
+@media (min-width: $width-middle) {
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .feature-list__item {
+    min-height: 55px;
+    margin-right: 23px;
+    padding-left: 67px;
+    padding-top: 16px;
+
+    &--ingredients {
+      width: 195px;
+    }
+
+    &--delivery {
+      width: 260px;
+    }
+
+    &:before {
+      width: 55px;
+      height: 55px;
+    }
+
+    &--ingredients:before {
+      background-position: -5px -342px;
+    }
+
+    &--delivery:before {
+      background-position: -5px -278px;
+    }
+  }
+
+}
+
+
+
+

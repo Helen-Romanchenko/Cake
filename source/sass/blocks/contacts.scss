@@ -1,0 +1,249 @@
+.contacts {
+  min-height: 757px;
+  border:  1px solid transparent;
+}
+
+.contacts__title {
+  margin: 0 auto;
+  margin-top: 32px;
+  text-align: center;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  padding-bottom: 50px;
+}
+
+.contacts__column {
+  width: 100%;
+  max-width: 346px;
+  margin: auto;
+}
+
+.contacts__subtitle {
+  //margin-top: 5px;
+  margin-bottom: 6px;
+  line-height: 22px;
+}
+
+.contacts__text {
+  margin: 0;
+  padding: 0;
+
+  font-family: $font-main;
+  @include set-font(14px, 400, 18px, $color-black);
+
+}
+
+.contacts__text--margin {
+  margin-bottom: 15px;
+}
+
+.contacts__customer-data,
+.contacts__customer-message {
+  width: 100%;
+
+  margin-top: 10px;
+  padding: 16px 10px;
+  box-sizing: border-box;
+
+  font-family: $font-main;
+  @include set-font(14px, 400, 18px, rgba($color-black, 20%));
+  background-color: $color-white;
+  border-radius: 3px;
+  border: none;
+  transition: all 0.4s ease-in-out;
+
+
+  &:focus,
+  &:hover {
+    color: rgba($color-black, 90%);
+    border: 1px solid $color-brightpink;
+    outline: none;
+  }
+}
+
+.contacts__customer-message {
+  min-height: 120px;
+}
+
+.contacts__submit {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 27px;
+}
+
+.contacts__link {
+  font: inherit;
+  color: $color-black;
+
+  &:hover,
+  &:active {
+    color: $color-brightpink;
+  }
+}
+
+
+@media (min-width: $width-middle) {
+  .contacts {
+    min-height: 590px;
+  }
+
+  .contacts__background {
+    background-image: url("../img/bg-contacts-tablet.jpg");
+    background-size: 486px auto;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-contacts-tablet@2x.jpg");
+      background-size: 486px auto;
+    }
+  }
+
+  .contacts__title {
+    margin-top: 35px;
+    margin-left: 27px;
+    text-align: left;
+  }
+
+  .contacts__wrapper {
+    flex-direction: row;
+    padding: 0 27px;
+    padding-top: 5px;
+    padding-bottom: 110px;
+}
+
+  .contacts__column {
+    width: 51.335%;  // 346/674
+    max-width: 570px;
+    margin: 0;
+    margin-right: 66px;
+  }
+
+  .contacts__column--narrow {
+    width: 262px;
+    max-width: 262px;
+    margin-right: 0;
+    margin-top: 42px;
+  }
+
+  .contacts__subtitle {
+    margin-bottom: 16px;
+    line-height: 26px;
+  }
+
+  .contacts__text--margin {
+    margin-bottom: 20px;
+  }
+
+  .contacts__submit {
+    margin: 0;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: $width-large) {
+  .contacts {
+    min-height: 844px;
+  }
+
+  .contacts__background {
+    max-width: 1500px;
+    margin: 0 auto;
+    background-image: url("../img/bg-contacts-desktop.jpg");
+    background-size: 935px auto;
+    background-position: right -67px bottom 0;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-contacts-desktop@2x.jpg");
+      background-size: 935px auto;
+    }
+  }
+
+  .contacts__title {
+    margin-top: 70px;
+    margin-left: 0;
+  }
+
+  .contacts__wrapper {
+    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 290px;
+  }
+
+  .contacts__column {
+    width: 555px;
+    max-width: 555px;
+    margin-right: 80px;
+  }
+
+  .contacts__column--narrow {
+    width: 555px;
+    max-width: 555px;
+    margin-top: 53px;
+  }
+
+  .contacts__subtitle {
+    margin-bottom: 18px;
+    line-height: 35px;
+  }
+
+  .contacts__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .contacts__text--margin {
+    margin-bottom: 30px;
+  }
+
+  .contacts__form {
+    padding-top: 10px;
+  }
+
+  .contacts__customer-data,
+  .contacts__customer-message {
+    width: 553px;
+    margin-top: 35px;
+    padding: 4px 0;
+    font-size: 20px;
+    line-height: 24px;
+
+    background-color: $color-lightpink;
+    border-bottom: 3px solid $color-border--form;
+    border-radius: 0;
+
+    &:focus,
+    &:hover {
+      color: rgba($color-black, 90%);
+      border: 1px solid $color-brightpink;
+      padding: 10px 10px;
+
+      background-color: $color-white;
+      border-radius: 3px;
+    }
+  }
+
+  .contacts__customer-message {
+    min-height: 32px;
+
+    &:focus,
+    &:hover {
+      min-height: 300px;
+    }
+  }
+
+  .contacts__submit {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .contacts__background {
+      background-position: right 0 bottom 0;
+  }
+}

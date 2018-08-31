@@ -1,0 +1,146 @@
+.site-list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+
+.site-list a {
+  display: block;
+  width: 100%;
+
+  padding-top: 13px;
+  padding-bottom: 14px;
+  box-sizing: border-box; //
+  font-family: $font-main;
+  @include set-font(12px, 400, 16px, $color-text--dropmenu);
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: $bg-dropmenu;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    position: relative;
+    z-index: 15;
+    color: $color-brightpink;
+  }
+  &:active {
+    background-color: $color-lightpink;
+  }
+
+}
+
+.site-list__item {
+  margin-top: -2px;
+}
+
+.site-list__item a {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.site-list__item:last-child a {
+  box-shadow: none;
+
+  &:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  }
+}
+
+
+@media (min-width: $width-large) {
+  .site-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  .site-list__item {
+    margin-top: 0;
+    margin-right: 20px;
+    animation: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .site-list__item:last-child a {
+    box-shadow: none;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  .site-list__item a {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 59px;
+    padding-bottom: initial;
+    font-size: 14px;
+    line-height: 26px;
+    color: $color-text--main;
+    background-color: transparent;
+    box-shadow: none;
+
+    &:active {
+      background-color: transparent;
+    }
+  }
+
+}
+
+
+.site-list__item--footer {
+
+}
+
+.site-list--footer a {
+  width: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  font-family: $font-complementary;
+  @include set-font(14px, 400, 18px, $color-white);
+  text-transform: none;
+  text-align: left;
+
+  background-color: transparent;
+}
+
+.site-list__item--footer {
+  margin-top: 0;
+}
+
+.site-list__item--footer a {
+  box-shadow: none;
+}
+
+.site-list__item--footer:last-child a:hover {
+  box-shadow: none;
+}
+
+@media (min-width: $width-middle) {
+    .site-list--footer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+  .site-list--footer a {
+    display: inline-block;
+    padding: 14px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: $width-large) {
+  .site-list--footer a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-text--main;
+  }
+}

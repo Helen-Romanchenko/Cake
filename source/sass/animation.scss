@@ -1,0 +1,24 @@
+/*
+@keyframes show-dropmenu {
+  0% {transform: translateY(-43px;);  }
+  100% {transform: translateY(0);}
+}
+*/
+
+@keyframes show-dropmenu {
+  0% {
+    transform:  translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes show-dropmenu--even {
+  0% {
+    transform:  translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

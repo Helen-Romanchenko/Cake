@@ -1,0 +1,9 @@
+.container {
+  @include inner;
+}
+
+.container--min-middle {
+  @media (min-width: $width-middle) {
+    @include inner;
+  }
+}

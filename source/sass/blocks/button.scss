@@ -1,0 +1,39 @@
+.button {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 63px;
+  font-family: $font-main;
+  @include set-font(14px, 400, 20px, $color-white);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 26px;
+  background-color: $color-brightpink;
+
+  &--small {
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 19px;
+    text-transform: none;
+  }
+
+  &--big {
+    padding-left: 68px;
+    padding-right: 68px;
+  }
+
+  &:hover,
+  &:active {
+    background-color: $color-brightpink;
+    box-shadow: 0 5px 7px 1px $color-shadow--3pink;
+    border: none;
+  }
+}
+
+@media (min-width: $width-middle) and (max-width: 1365px){
+  .button--order {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
