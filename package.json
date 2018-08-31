@@ -60,6 +60,7 @@
     "stylelint": "stylelint 'sass/**/*.scss' --syntax scss",
     "build": "gulp build",
     "start": "npm run build && gulp serve",
+    "gp_build": "gulp gp_build",
     "deploy": "gulp deploy"
   }
 }
