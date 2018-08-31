@@ -128,7 +128,7 @@ gulp.task('deploy', function(done) {
 // GitHub Pages
 
 gulp.task("gp_clean", function () {
-  return del("docs");
+  return del("/docs");
 });
 
 gulp.task("gp_copy", function(){
@@ -137,7 +137,7 @@ gulp.task("gp_copy", function(){
   ], {
     base: "build"
   })
-  .pipe(gulp.dest("docs"));
+  .pipe(gulp.dest("/docs"));
 });
 
 gulp.task("gp_build", gulp.series("build", "gp_clean", "gp_copy"));
