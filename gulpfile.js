@@ -124,3 +124,21 @@ gulp.task('deploy', function(done) {
     .pipe(ghPages());
     done();
 });
+
+// GitHub Pages
+
+gulp.task("gp_clean", function () {
+  return del("docs folder");
+});
+
+gulp.task("gp_copy", function(){
+  return gulp.src([
+    "build/**/*"
+  ], {
+    base: "build"
+  })
+  .pipe(gulp.dest("docs folder"));
+});
+
+gulp.task("gp_build", gulp.series("build", "gp_clean", "gp_copy"));
+
