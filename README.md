@@ -22,8 +22,7 @@ This template was used as a study project for improving skills in coding using b
 
 ### Tests
 
-!https://github.com/Helen-Romanchenko/Cake/blob/master/description/site-audit.png
-
+![site-audit](https://github.com/Helen-Romanchenko/Cake/blob/master/description/site-audit.png)
 
 *****
 
