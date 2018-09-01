@@ -22,13 +22,9 @@ This template was used as a study project for improving skills in coding using b
 
 ### Tests
 
-!(https://github.com/Helen-Romanchenko/Cake/blob/master/description/site-audit.png)
+!https://github.com/Helen-Romanchenko/Cake/blob/master/description/site-audit.png
 
 
 *****
 
 ***Live Demo:***  https://helen-romanchenko.github.io/Cake/
-
-
-
-
