@@ -4,9 +4,11 @@ Cake is a modern and creative template for pastry-shop. It presents the confecti
 
 This template was used as a study project for improving skills in coding using best practices and modern technologies.
 
+/docs folder was created for the possibility to publish the site at GitHub Pages.
+
 *****
 
-** Features: **
+**Features:**
 1. Valid HTML5 & CSS3.
 2. Cross-browser compatibility (supported browsers: current versions Chrome, Opera, Firefox, Safari, Edge, IE11).
 3. CSS3 Animation.
@@ -14,15 +16,18 @@ This template was used as a study project for improving skills in coding using b
 5. SEO Friendly.
 6. High accessibility.
 7. HTML + CSS3 + SVG + Sass + Gulp.
+8. @2x images for retina displays.
 
 *****
 
 ### Tests
 
+!(https://github.com/Helen-Romanchenko/Cake/blob/master/description/site-audit.png)
+
 
 *****
 
-*** Live Demo: ***
+***Live Demo:***  https://helen-romanchenko.github.io/Cake/
 
 
 
