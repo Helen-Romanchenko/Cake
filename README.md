@@ -32,4 +32,4 @@ This template was used as a study project for improving skills in coding using b
 
 ### Preview
 
-![preview a desktop version](https://github.com/Helen-Romanchenko/Cake/blob/master/description/preview-desktop_version.png)
+![preview a desktop version](https://github.com/Helen-Romanchenko/Cake/blob/master/description/preview-desktop_version.jpg)
