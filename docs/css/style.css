@@ -666,7 +666,8 @@ a {
 
 .main-nav__language a {
   font-size: 12px;
-  line-height: 16px; }
+  line-height: 16px;
+  color: #2d2829; }
 
 .main-nav__language a[href]:hover, .main-nav__language a[href]:active {
   color: #f50049; }
