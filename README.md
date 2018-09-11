@@ -27,3 +27,9 @@ This template was used as a study project for improving skills in coding using b
 *****
 
 ***Live Demo:***  https://helen-romanchenko.github.io/Cake/
+
+*****
+
+### Preview
+
+![preview a desktop version](https://github.com/Helen-Romanchenko/Cake/blob/master/description/preview-desktop_version.png)
