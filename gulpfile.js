@@ -133,8 +133,7 @@ gulp.task("gp_clean", function () {
 
 gulp.task("gp_copy", function(){
   return gulp.src([
-    "build/**/*",
-    "!build/index-ru.html"
+    "build/**/*"
   ], {
     base: "build"
   })
